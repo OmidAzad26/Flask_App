@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        header button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .content-box {
+            background-color: #f5f5f5;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>What are the risks of artificial intelligence (AI)?</h1>
+        <div>
+            <button onclick="shareOnTelegram()">Telegram</button>
+            <button onclick="shareOnTwitter()">Twitter</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="content-box">
+            <p>AI is a specific branch of computer science concerned with mimicking human thinking and decision-making processes. These programs can often revise their own algorithms by analyzing data sets and improving their own performance without needing the help of a human.
+             These are often programmed to complete tasks that are too complex for non-AI machines.As with most things to do with AI, the answer to this question is complicated. There are some risks associated with AI, some pragmatic and some ethical. 
+             Leading experts debate how dangerous AI could be in the future, but there is no real consensus yet. 
+             However, there are a few dangers that experts agree upon. Many of these are purely hypothetical situations that may happen in the future without proper precautions, and some are real concerns that we deal with today. </p>
+           
+        </div>
+    </main>
+
+    <footer>
+        <p> © 2024</p>
+    </footer>
+
+    <script>
+        function shareOnTelegram() {
+    
+            var telegramLink = 'https://t.me/your-channel';
+            window.open('https://t.me/share/url?url=http://127.0.0.1:5000/content' + encodeURIComponent(telegramLink));
+        }
+
+
+        function shareOnTwitter() {
+ 
+            var twitterLink = 'https://twitter.com/intent/tweet?text=http://127.0.0.1:5000/content' + encodeURIComponent('Check out this page: ') + encodeURIComponent(window.location.href);
+            window.open(twitterLink);
+        }
+        
+ 
+    </script>
+
+</body>
+</html>

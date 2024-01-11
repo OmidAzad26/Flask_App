@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 2em 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 1em;
+            font-size: 1.2em;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: #007bff;
+        }
+
+        main {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+            transition: color 0.3s ease-in-out;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+
+        button {
+            padding: 11px 20px;
+            font-size: 1em;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 2em 0;
+        }
+
+       
+        .floating-image {
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            width: 250px;
+            height: 150px;
+        }
+
+        .floating-image:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <b><h2>Welcome</h2></b>
+        <nav>
+            <a href="/">Main</a>
+            <a href="#">Contact Us</a>
+            <a href="/login"><button>Sign in</button></a>
+        </nav>
+    </header>
+    <main>
+        
+        <img class="floating-image" src="{{ url_for('static', filename='img3.jpg') }}" alt="Image 1">
+        <img class="floating-image" src="{{ url_for('static', filename='img4.jpg') }}" alt="Image 2">
+        <img class="floating-image" src="{{ url_for('static', filename='img5.jpg') }}" alt="Image 3">
+    </main>
+    <footer>
+        &copy; 2024 
+    </footer>
+</body>
+</html>
